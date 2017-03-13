@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flight Schedule</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="container">
+      <!-- main banner start -->
+      <div class="col-md-2 col-sm-2">
+        <h1 id="banner" class="center-align z-depth-3"></h1>
+      </div>
+      <!-- table Start -->
+      <h2>Flight Scheduler</h2>
+      <div class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title">Current Flight Schedule</h3>
+          </div>
+        <table id="schedule" class="table">
+          <thead class="thead-default">
+            <tr>
+              <th data-field="flight">Flight Name</th>
+              <th data-field="name">Destination</th>
+              <th data-field="frequency">Frequency (mins)</th>
+              <th data-field="arrival">Next Arrival</th>
+              <th data-field="away">Minutes Away</th>
+             </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Delta</td>
+              <td>Hawaii</td>
+              <td>310</td>
+              <td>10:30</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>American</td>
+              <td>New York City</td>
+              <td>390</td>
+              <td>13:20</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>British Airways</td>
+              <td>London, United Kingdom</td>
+              <td>680</td>
+              <td>20:10</td>
+              <td>45</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>    
+      <!--Form Begin -->
+      <div class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title">Add Flight</h3>
+          </div>
+        <table>  
+          <tr>
+            <td>
+              <div class="form-group">
+                <label for="example-text-input" class="col-2 col-form-label">Flight Name</label>
+                <div class="col-10">
+                  <input class="form-control" type="text" value="" id="flight-name">
+                </div>
+              </div> 
+            </td>
+          </tr>
+            <tr>  
+              <td>   
+                <div class="form-group">
+                  <label for="example-search-input" class="col-2 col-form-label">Destination</label>
+                  <div class="col-10">
+                    <input class="form-control" type="search" value="" id="destination">
+                  </div>
+                </div>
+               <td> 
+            </tr> 
+            <tr>
+              <td>
+                <div class="form-group">
+                  <label for="example-email-input" class="col-2 col-form-label">First Flight Time (HH:MM) Miltary Time</label>
+                  <div class="col-10">
+                    <input class="form-control" type="email" value="" id="first-flight">
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="form-group">
+                  <label for="example-url-input" class="col-2 col-form-label">Frequency (minutes)</label>
+                  <div class="col-10">
+                    <input class="form-control" type="url" value="" id="frequency">
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="form-group">
+                  <button id="submit" class="btn btn-primary" type="submit">Submit
+                  </button>
+                </div>
+              </td>    
+            </tr>
+        </table>
+      </div>
+    </div> <!-- end main container -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.17.1/moment.min.js"></script>
+  <script src="assets/javascript/app.js"></script>
+  </body>
+</html>
